@@ -1,0 +1,15 @@
+CREATE TABLE tokens (
+    token VARCHAR(100),
+    client VARCHAR(100),
+    userr VARCHAR(100)
+);
+
+CREATE TABLE users (
+  ID SERIAL PRIMARY KEY,
+  name VARCHAR(30),
+  email VARCHAR(30),
+  password VARCHAR(30)
+);
+
+INSERT INTO users (name, email, password)
+  VALUES ('willIan', 'willian@example.com', 'senha');
